@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+    background-image: url(../img/fodo3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+#tabla{
+    
+    height: 1100px;
+    width: 1000px;
+    margin:auto;
+    background-color: #A78294;
+}
+/*Cabecera*/
+#logo{
+    width: 300px;
+    height: 300px;
+}
+#img1{
+    width: 700px;
+    height: 300px;
+}
+/*Menu*/
+
+.menu ul{
+    display: block;
+    list-style: none; 
+      
+}
+.menu ul li a{
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    font-weight: 800;
+       
+}
+.menu ul > li{
+    float: left;
+    width: 200px;
+    height: 60px;
+    padding: 10px 0px;
+    background-color: #a277ad;
+    border-radius: 10px;    
+    
+}
+/*Imagen debajo del menu página index.html
+Tanto en mi pagina index.html como nosotros.html he usado la misma tabla para todo en mis siguientes html si he tenido que usar tablas dentro de tablas para crear las estructuras
+correctamente.*/
+
+.imagen{
+
+    height: 230px;
+    
+}
+
+.imagen img{
+    height: 200px;
+    width: 900px;
+}
+.texto1{
+    color: azure;
+    font-size: 14px;
+    justify-content: center;
+    height: 230px;
+    
+
+}
+
+.texto1 td{
+    height: 230px;
+    padding: 0px 12px;
+   background-color: #A78294;
+   font-size: 15px;
+   
+   
+}
+
+
+
+.video{
+   background-color: #A78294;
+   text-align: right;
+   
+   
+}
+/*Aqui le estoy diciendo que todos los td que contengan hr tengan un margin tanto arriba como abajo de 10px*/
+tr td > hr{
+    margin: 5px 0px;
+    border:6px solid #962d59;   
+}
+
+.footer{
+    height: 50px;
+    background-color: #A78294;
+    width: 1100px;
+    color: azure;
+}
+.autor{
+    text-align: right;
+    padding-right: 30px;
+}  
+
+/*                        Nosotros.html             */
+/*Para poder meter el titulo y alinear las dos imágenes la primera a la derecha y la segunda a la izquierda lo que he tenido que crear es un div para todo al que le he dado
+toda la anchura y le he metido un inline-flex para que se me me ponga todo en horizontal, al título le he dado 400px de ancho en su propio div y he puesto el texto al centro, también
+le he metido el text-decoration: underline para subrayar el texto.
+Y para los dos div de las imágenes les he dado un ancho restante dividendolo entre 2 (300px) y le he metido al primero un text-aling right y al segundo un left. */
+.pasteles{
+    text-align: center;
+    height: 80px;
+   
+       
+}
+.todo{
+    height: 80px;
+    width: 800px;
+    display: inline-flex;
+    align-items: center;
+}
+.titulo{
+    height: 60px;
+    width: 400px;
+    text-align: center;  
+    color: #962d59;
+    text-decoration: underline;
+}
+
+
+.pasteles img{
+    height: 80px;
+    width: 80px;
+}
+
+/*Imagen 1*/
+
+.uno{
+    text-align: right;
+    width: 300px;
+}
+.dos{
+        text-align: left;
+        width: 300px;
+    }
+
+.img img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+    left: 40px;
+    border: purple dotted 2px;
+    border-radius: 5%;;
+}
+
+.img h2{
+    font-size: 40px;
+    border:purple dotted 2px ;
+    width: 600px;
+   text-align: center;
+    border-radius: 5%;
+    position: relative;
+    left: 80px;
+}
+
+.img{
+    text-align: center;
+  
+    
+}
+
+/*                                                     Productos.html                                  */
+/*En este html he hecho una tabla dentro de otra tabla para poder crear la tabla de los pasteles dentro de la tabla predefinida para todas mis paginas html, en el proyecto no vi 
+donde deberia redirecionarse cada tarta al pulsar en su nombre justo debajo de su imagen pero esta todo preparado solo para poner el enlace y que se redireccione.*/
+
+
+  #productos{
+    padding-top: 5px;
+    height: 630px;
+    width: 800px;
+    margin: auto;
+    color: purple;
+}
+
+#productos tr td{
+    
+    width: 250px;
+
+}
+
+.tarta{
+    background-color: #E5B5CC;
+    height: 70px;
+    
+
+    
+   
+}
+
+.imgt{
+    border: azure solid 5px;
+    
+}
+
+.imgt a{
+    text-decoration: none;
+    font-size: 15px;
+    color: purple;
+}
+.imgt img{
+    height: 150px;
+    width: 90%;
+}
+
+/*                                                        Eventos                        */
+/*En este html he hecho dos tablas dentro de la tabla por defecto que tienen todas mis páginas html.*/
+
+/*Primera tabla de eventos*/
+#eventos{
+    margin: auto;
+    width: 960px;
+    height: 440px;
+    
+}
+
+#eventos tr td{
+    width: 480px;
+   
+}
+.tr1{
+    height: 40px;
+    color: purple;
+}
+
+.tr2{
+    height: 30px;
+    color: purple;
+}
+.imgs{
+    height: 350px;
+   
+}
+
+.imgs img{
+    width: 100%;
+    height: 330px;
+    padding-right: 5px;
+}
+
+.hr{
+    height: 20px;
+}
+
+/*Segunda tabla de eventos*/
+
+#eventos2{
+    width: 960px;
+    height: 360px;
+    
+    margin: auto;
+}
+
+.td1{
+    
+    width: 360px;
+    text-align: right;
+    padding: 5px 20px;
+}
+.td2{
+    
+    width: 600px;
+    text-align: left;
+}
+
+.td2 h4{
+    color: purple;
+}
+
+/*                                                     Contacto                                */
+/*En este html dentro de mi tabla predefinida he hecho una tabla y dentro de esa tabla he hecho otra tabla para poder hacerlo todo.*/
+#contacto{
+    margin: auto;
+    height: 690px;
+    width: 900px;
+    
+}
+.mapa{
+    height: 200px;
+    width: 900px;
+}
+
+.con1{
+    width: 900px;
+    height: 60px;
+    color: purple;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.con2{
+    height: 430px;
+    width: 900px;
+   
+}
+#contacto2{
+    width: 900px;
+    height: 250px;
+    
+}
+.cont1{
+   
+    width: 380px;
+    height: 50px;
+}
+
+.cont1 input{
+    margin: 0px 10px;
+    
+}
+/*en esta clase modifico el textarea para que me entre en el recuadro y le doy a la celda el tamaño que pide el proyecto que son 380px, no soy capaz de poner Comentario al lado del
+checkbox lo deje justo encima.*/ 
+.cont3 {
+    height: 350px;
+    text-align: left;
+     padding-left: 50px;
+    width: 380px;
+    margin: auto;
+       
+}
+
+.cont3 textarea{
+    width: 250px; 
+      
+}
+
+.enviar{
+    text-align: right;
+}
+
+.cont2{
+   
+    width: 245px;
+    font-size: 25px;
+    text-align: left;
+    
+}
+
+.mensaje{
+    height: 15px;
+    width: 15px;
+    padding-right: 5px;
+}
+.mensajes{
+    text-align: right;
+}
+    
+    
+   
+    
+
+
